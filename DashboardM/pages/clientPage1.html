@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Product</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+  <aside id="mySidebar" class="sidebar w-300">
+    <a href="javascript:void(0)" class="closebtn fa-solid fa-angles-left" onclick="closeNav()"></a>
+    <p class="px-3 fw-bolder gray-text">King Khalid International Airport port inspection system</p>
+    <ul class="p-0">
+      <li>
+        <a href="#"><i class="fa-solid fa-circle-plus me-2"></i>inquiry</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+      </li>
+    </ul>
+  </aside>
+  <nav class="navbar px-4">
+    <button class="openbtn show-btn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button>
+    <!-- <h5 class="mb-0 fw-bolder">
+      <span>General Authority for</span>
+      <hr class="m-0">
+      <span>Saudi Food and Drug Administration</span>
+    </h5> -->
+    <div class="h-100 d-flex align-items-center">
+      <div class="logo h-100">
+        <img src="../images/logo.jpg" alt="logo">
+      </div>
+      <h5 class="fw-bolder ms-2 mb-0">
+        Saudi food &
+        <br />
+        drog authority
+      </h5>
+    </div>
+    <h6 class="mb-0 fw-bolder d-flex align-items-center">
+      <p class="m-0 d-none d-sm-block">Aziz-DHL</p>
+      <i class="fa-regular fa-circle-user ms-2" title="Aziz-DHL"></i>
+    </h6>
+  </nav>
+  <main class="m-300 p-3 p-md-5 client-page mb-4">
+    <section class="container content-page">
+      <p class="alert alert-success border-R text-capitalize text-center fw-bold">has been sent 
+        <i class="fa-solid fa-check ms-2"></i></p>
+
+      <div class="box-shadow border-R p-3 p-lg-5">
+        <div class="d-flex justify-content-center flex-wrap pb-3 pb-md-5">
+          <div class="input-box mx-2">
+            <label class="text-capitalize font-14 fw-bold mb-0 mb-sm-2" for="order_id">Order ID</label>
+            <input type="text" id="order_id" class="form-control font-14" placeholder="5614">
+          </div>
+          <div class="input-box mx-2">
+            <label class="text-capitalize font-14 fw-bold mb-0 mb-sm-2" for="custom_id">customs declaration ID</label>
+            <input type="text" id="custom_id" class="form-control font-14" placeholder="5614">
+          </div>
+          <div class="input-box mx-2">
+            <label class="text-capitalize font-14 fw-bold mb-0 mb-sm-2" for="importer">importer's name</label>
+            <input type="text" id="importer" class="form-control font-14" placeholder="5614">
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="card-image d-flex my-3 py-xl-5 flex-wrap">
+          <div class="w-card border-0 d-flex flex-column align-items-center">
+            <div class="w-card w-100 border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+              <i class="fa-solid fa-circle-info position-absolute" id="first" data-bs-toggle="modal"
+                data-bs-target="#showDetails"></i>
+              <p class="font-14 fw-bold gray-text text-center">The general picture of the parcel</p>
+              <a href="./addImage.html">
+                <i class="fa-solid fa-file-arrow-up"></i>
+              </a>
+            </div>
+            <i class="fa-solid fa-circle-check mt-2"></i>
+          </div>
+          <div class="w-card border-0 d-flex flex-column align-items-center">
+            <div class="w-card w-100 border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+              <i class="fa-solid fa-circle-info position-absolute" id="second" data-bs-toggle="modal"
+                data-bs-target="#showDetails"></i>
+              <p class="font-14 fw-bold gray-text text-center">General picture of products</p>
+              <a href="./addImage.html">
+                <i class="fa-solid fa-file-arrow-up"></i>
+              </a>
+            </div>
+            <i class="fa-solid fa-circle-check mt-2"></i>
+          </div>
+          <div class="w-card border-0 d-flex flex-column align-items-center">
+            <div class="w-card w-100 border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+              <i class="fa-solid fa-circle-info position-absolute" id="third" data-bs-toggle="modal"
+                data-bs-target="#showDetails"></i>
+              <p class="font-14 fw-bold gray-text text-center">Product identification card picture</p>
+              <a href="./addImage.html">
+                <i class="fa-solid fa-file-arrow-up"></i>
+              </a>
+            </div>
+            <i class="fa-solid fa-circle-check mt-2"></i>
+          </div>
+          <div class="w-card border-0 d-flex flex-column align-items-center">
+            <div class="w-card w-100 border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+              <i class="fa-solid fa-circle-info position-absolute" id="fourth" data-bs-toggle="modal"
+                data-bs-target="#showDetails"></i>
+              <p class="font-14 fw-bold gray-text text-center">Read the thermal indicator</p>
+              <a href="./addImage.html">
+                <i class="fa-solid fa-file-arrow-up"></i>
+              </a>
+            </div>
+            <i class="fa-solid fa-circle-check mt-2"></i>
+          </div>
+          <div class="w-card border-0 d-flex flex-column align-items-center">
+            <div class="w-card w-100 border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+              <i class="fa-solid fa-circle-info position-absolute" id="fifth"></i>
+              <p class="font-14 fw-bold gray-text text-center">other</p>
+              <a href="./addImage.html">
+                <i class="fa-solid fa-file-arrow-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center my-4">
+          <button class="btn btn-back">Send</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="showDetails" tabindex="-1" aria-labelledby="showDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog my-0">
+      <div class="modal-content">
+        <div class="modal-body none-body first">
+          <p class="gray-text fw-bolder">The photo must show the quantity of parcels received</p>
+          <div class="box-card-img">
+            <img src="../images/img1.PNG" alt="not found">
+          </div>
+        </div>
+        <div class="modal-body none-body second">
+          <p class="gray-text fw-bolder">All items included in the invoice must be photographed, taking into account the
+            name of the product</p>
+          <div class="box-card-img">
+            <img src="../images/img2.PNG" alt="not found">
+          </div>
+        </div>
+        <div class="modal-body none-body third">
+          <p class="gray-text fw-bolder">This card shows the information or components of the product</p>
+          <div class="d-flex">
+            <div class="box-card-img">
+              <img src="../images/img3.PNG" alt="not found">
+            </div>
+            <div class="box-card-img">
+              <img src="../images/img4.PNG" alt="not found">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body none-body fourth">
+          <p class="gray-text fw-bolder">Raise the reading of the thermal indicator attached to the consignment</p>
+          <ol class="px-3">
+            <li class="fw-bold gray-text font-14"> insert USP datalogger in PC</li>
+            <li class="fw-bold gray-text font-14"> Go to this PC .</li>
+            <li class="fw-bold gray-text font-14">Copy PDF file and upload . </li>
+          </ol>
+          <div class="d-flex">
+            <div class="box-card-img">
+              <img src="../images/img5.PNG" alt="not found">
+            </div>
+            <div class="box-card-img">
+              <img src="../images/img6.PNG" alt="not found">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary m-auto px-4" data-bs-dismiss="modal" aria-label="Close">
+            I got it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bootstrap -->
+  <script src="../libs/jQuery.js"></script>
+  <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+
+  <!-- custom -->
+  <script src="../js/script.js"></script>
+  <script src="../js/showModal.js"></script>
+</body>
+
+</html>

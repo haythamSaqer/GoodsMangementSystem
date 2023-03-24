@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Product</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- dataTable -->
+  <link rel="stylesheet" href="../libs/dataTable/dataTablesBootstrap.css">
+  <link rel="stylesheet" href="../libs/dataTable/responsive.css">
+  <!-- end -->
+
+  <!-- datepicker -->
+  <link rel="stylesheet" href="../libs/datepiker/datepicker.css">
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/select.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+  <aside id="mySidebar" class="sidebar w-300">
+    <a href="javascript:void(0)" class="closebtn fa-solid fa-angles-left" onclick="closeNav()"></a>
+    <p class="px-3 fw-bolder gray-text">King Khalid International Airport port inspection system</p>
+    <ul class="p-0">
+      <li>
+        <a href="./pages/addImage.html"><i class="fa-solid fa-circle-plus me-2"></i>new request</a>
+      </li>
+      <li>
+        <a href="./pages/clientPage.html"><i class="fa-solid fa-chart-line me-2"></i>dashboard</a>
+      </li>
+      <li>
+        <a href="./pages/clientPage1.html"><i class="fa-solid fa-gauge me-2"></i>Performance indicators</a>
+      </li>
+      <li>
+        <a href="./pages/productsImg.html"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+      </li>
+    </ul>
+  </aside>
+  <nav class="navbar px-4">
+    <button class="openbtn show-btn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button>
+    <div class="h-100 d-flex align-items-center">
+      <div class="logo h-100">
+        <img src="../images/logo.jpg" alt="logo">
+      </div>
+      <h5 class="fw-bolder ms-2 mb-0">
+        Saudi food &
+        <br />
+        drog authority
+      </h5>
+    </div>
+    <h6 class="mb-0 fw-bolder d-flex align-items-center">
+      <p class="m-0 d-none d-sm-block">Abdulaziz S.Al-Anazi</p>
+      <i class="fa-regular fa-circle-user ms-2" title="Abdulaziz S.Al-Anazi"></i>
+    </h6>
+  </nav>
+  <main class="m-300 py-3 py-md-5">
+    <section class="content-page ">
+      <div class="border-R box-shadow d-flex flex-wrap align-items-start justify-content-between px-3 py-4">
+        <div class="dashboard col-12 col-lg-6 col-xl-7 col-xxl-8 mb-4 mb-lg-0">
+          <div class="d-flex flex-wrap mb-3">
+            <div class="col-12 col-md-6 col-xl-4 px-2">
+              <p class="font-14 fw-bold mb-2">Date From :</p>
+              <div class='my-2 input-group date date'>
+                <span class="input-group-addon input-group-text"><span class="fa fa-calendar"></span>
+                </span>
+                <input type='text' class="form-control" name="startDate" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 px-2">
+              <p class="font-14 fw-bold mb-2">To :</p>
+              <div class='my-2 input-group date date'>
+                <span class="input-group-addon input-group-text"><span class="fa fa-calendar"></span>
+                </span>
+                <input type='text' class="form-control" name="startDate" />
+              </div>
+            </div>
+          </div>
+          <table class="w-100">
+            <thead>
+              <tr>
+                <th>Transporter</th>
+                <th>today</th>
+                <th>a day late</th>
+                <th>more than a day late</th>
+                <th>KPI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DHL</td>
+                <td>21</td>
+                <td>4</td>
+                <td>3</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <td>DHL</td>
+                <td>21</td>
+                <td>4</td>
+                <td>3</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <td>DHL</td>
+                <td>21</td>
+                <td>4</td>
+                <td>3</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <td>DHL</td>
+                <td>21</td>
+                <td>4</td>
+                <td>3</td>
+                <td>50%</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td>Total</td>
+              <td>21</td>
+              <td>4</td>
+              <td>3</td>
+              <td>50%</td>
+            </tfoot>
+          </table>
+        </div>
+        <div class="box-chart border-R d-flex flex-column align-items-center justify-content-center">
+          <p class="text-center text-capitalize font-14 fw-bold">Performance Index</p>
+          <ul class="d-flex p-0">
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 green-label"></i>
+              today
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 orange-label"></i>
+              a day late
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 red-label"></i>
+              more than a day late
+            </li>
+          </ul>
+          <div class="statCont clearfix" id="pie_chart">
+            <div class="pieChartCont">
+              <canvas id="pieChart" width="300" height="300"></canvas>
+            </div>
+          </div>
+          <h5 class="fw-bold mt-3 mb-0">KPI</h5>
+        </div>
+      </div>
+      <div class="border-R box-shadow p-2 d-flex flex-wrap align-items-center mt-4 mt-md-5 box-charts">
+        <div class="border-R box-chart-5 p-3">
+          <p class="text-center text-capitalize font-14 fw-bold">Performance Index</p>
+          <ul class="p-0">
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 green-label"></i>
+              today
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 orange-label"></i>
+              a day late
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 red-label"></i>
+              more than a day late
+            </li>
+          </ul>
+          <div class="pie-chart">
+            <div class="pieChartCont">
+              <canvas id="dhl" width="300" height="300"></canvas>
+            </div>
+          </div>
+          <p class="fw-bold font-14 mt-3 mb-0 text-center">DHL</p>
+        </div>
+        <div class="border-R box-chart-5 p-3">
+          <p class="text-center text-capitalize font-14 fw-bold">Performance Index</p>
+          <ul class="p-0">
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 green-label"></i>
+              today
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 orange-label"></i>
+              a day late
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 red-label"></i>
+              more than a day late
+            </li>
+          </ul>
+          <div class="pie-chart">
+            <div class="pieChartCont">
+              <canvas id="FEDEX" width="300" height="300"></canvas>
+            </div>
+          </div>
+          <p class="fw-bold font-14 mt-3 mb-0 text-center">FEDEX</p>
+        </div>
+        <div class="border-R box-chart-5 p-3">
+          <p class="text-center text-capitalize font-14 fw-bold">Performance Index</p>
+          <ul class="p-0">
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 green-label"></i>
+              today
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 orange-label"></i>
+              a day late
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 red-label"></i>
+              more than a day late
+            </li>
+          </ul>
+          <div class="pie-chart">
+            <div class="pieChartCont">
+              <canvas id="ARAMEX" width="300" height="300"></canvas>
+            </div>
+          </div>
+          <p class="fw-bold font-14 mt-3 mb-0 text-center">ARAMEX</p>
+        </div>
+        <div class="border-R box-chart-5 p-3">
+          <p class="text-center text-capitalize font-14 fw-bold">Performance Index</p>
+          <ul class="p-0">
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 green-label"></i>
+              today
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 orange-label"></i>
+              a day late
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 red-label"></i>
+              more than a day late
+            </li>
+          </ul>
+          <div class="pie-chart">
+            <div class="pieChartCont">
+              <canvas id="UPS" width="300" height="300"></canvas>
+            </div>
+          </div>
+          <p class="fw-bold font-14 mt-3 mb-0 text-center">UPS</p>
+        </div>
+        <div class="border-R box-chart-5 p-3">
+          <p class="text-center text-capitalize font-14 fw-bold">Performance Index</p>
+          <ul class="p-0">
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 green-label"></i>
+              today
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 orange-label"></i>
+              a day late
+            </li>
+            <li class="fw-bold font-12 d-flex align-items-center">
+              <i class="fa-solid fa-square mx-1 red-label"></i>
+              more than a day late
+            </li>
+          </ul>
+          <div class="pie-chart">
+            <div class="pieChartCont">
+              <canvas id="SMSACHART" width="300" height="300"></canvas>
+            </div>
+          </div>
+          <p class="fw-bold font-14 mt-3 mb-0 text-center">SMSA</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+  <!-- bootstrap -->
+  <script src="../libs/jQuery.js"></script>
+  <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+
+  <!-- chart -->
+  <script src="../libs/chart.js/Chart.js"></script>
+
+  <!-- dataTable -->
+  <script src="../libs/dataTable/table.js"></script>
+  <script src='../libs/dataTable/dataTablejQuery.js'></script>
+  <script src='../libs/dataTable/responsive.js'></script>
+  </script>
+  <!-- end -->
+
+
+  <!-- datepicker -->
+  <script src="../libs/datepiker/datepiker.js"></script>
+
+  <!-- custom -->
+  <script src="../js/datepicker.js"></script>
+  <script src="../js/select.js"></script>
+  <script src="../js/chart.js"></script>
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>

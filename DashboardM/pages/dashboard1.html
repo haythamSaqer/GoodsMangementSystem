@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Product</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+  <aside id="mySidebar" class="sidebar w-300">
+    <a href="javascript:void(0)" class="closebtn fa-solid fa-angles-left" onclick="closeNav()"></a>
+    <p class="px-3 fw-bolder gray-text">King Khalid International Airport port inspection system</p>
+    <ul class="p-0">
+      <li>
+        <a href="./pages/addImage.html"><i class="fa-solid fa-circle-plus me-2"></i>new request</a>
+      </li>
+      <li>
+        <a href="./pages/clientPage.html"><i class="fa-solid fa-chart-line me-2"></i>dashboard</a>
+      </li>
+      <li>
+        <a href="./pages/clientPage1.html"><i class="fa-solid fa-gauge me-2"></i>Performance indicators</a>
+      </li>
+      <li>
+        <a href="./pages/productsImg.html"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+      </li>
+    </ul>
+  </aside>
+  <nav class="navbar px-4">
+    <button class="openbtn show-btn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button>
+    <div class="h-100 d-flex align-items-center">
+      <div class="logo h-100">
+        <img src="../images/logo.jpg" alt="logo">
+      </div>
+      <h5 class="fw-bolder ms-2 mb-0">
+        Saudi food &
+        <br />
+        drog authority
+      </h5>
+    </div>
+    <h6 class="mb-0 fw-bolder d-flex align-items-center">
+      <p class="m-0 d-none d-sm-block">Abdulaziz S.Al-Anazi</p>
+      <i class="fa-regular fa-circle-user ms-2" title="Abdulaziz S.Al-Anazi"></i>
+    </h6>
+  </nav>
+  <main class="m-300 py-3 py-md-5">
+    <section class="content-page">
+      <div>
+        <ul class="d-flex flex-wrap p-0">
+          <li class="font-14 fw-bold me-3 me-md-4 d-flex align-items-center text-capitalize">
+            <i class="fa-solid fa-circle me-2 green-label"></i>
+            today
+          </li>
+          <li class="font-14 fw-bold me-3 me-md-4 d-flex align-items-center text-capitalize">
+            <i class="fa-solid fa-circle me-2 orange-label"></i>
+            a day late
+          </li>
+          <li class="font-14 fw-bold me-3 me-md-4 d-flex align-items-center text-capitalize">
+            <i class="fa-solid fa-circle me-2 red-label"></i>
+            more than a day late
+          </li>
+          <li class="font-14 fw-bold me-3 me-md-4 d-flex align-items-center text-capitalize">
+            <i class="fa-solid fa-circle me-2 gray-label"></i>
+            finished</li>
+        </ul>
+      </div>
+      <div class="box-shadow border-R d-flex flex-wrap dashboard-h">
+        <div class="col-12 col-md-6 col-lg-4 flex-grow-1 mb-3">
+          <p class="fw-bold text-capitalize text-center p-3 p-md-4 border-b-1">preview</p>
+          <ul class="p-3 p-md-4 d-flex flex-wrap">
+            <li class="font-14 fw-bold bg-red">
+              <span>DHL</span>
+              <span class="ms-3">565456364568</span>
+            </li>
+            <li class="font-14 fw-bold bg-green-back">
+              <span>DHL</span>
+              <span class="ms-3">565456364568</span>
+            </li>
+            <li class="font-14 fw-bold bg-green">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+            <li class="font-14 fw-bold bg-orange">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 flex-grow-1 mb-3">
+          <p class="fw-bold text-capitalize text-center p-3 p-md-4 border-b-1">Preview done</p>
+          <ul class="p-3 p-md-4 d-flex flex-wrap">
+            <li class="font-14 fw-bold bg-red">
+              <span>DHL</span>
+              <span class="ms-3">565456364568</span>
+            </li>
+            <li class="font-14 fw-bold bg-green">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+            <li class="font-14 fw-bold bg-red">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+            <li class="font-14 fw-bold bg-orange">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+            <li class="font-14 fw-bold bg-green">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 flex-grow-1 mb-3">
+          <p class="fw-bold text-capitalize text-center p-3 p-md-4 border-b-1">Been completed</p>
+          <ul class="p-3 p-md-4 d-flex flex-wrap">
+            <li class="font-14 fw-bold bg-gray">
+              <span>DHL</span>
+              <span class="ms-3">565456364568</span>
+            </li>
+            <li class="font-14 fw-bold bg-gray">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+            <li class="font-14 fw-bold bg-gray">
+              <span>DHL</span>
+              <span class="ms-3">56568</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- bootstrap -->
+  <script src="../libs/jQuery.js"></script>
+  <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+
+  <!-- custom -->
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>

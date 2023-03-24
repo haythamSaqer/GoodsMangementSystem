@@ -1,0 +1,13 @@
+{% extends 'base1.html' %}
+
+{% block content %}
+  <h1>Employee List</h1>
+  <ul>
+    {% for company in object_list %}
+      <li>{{ company.username }}</li>
+      <li><a href="{% url 'goods_management:employee-update' employee.pk %}">Update</li>
+    {% empty %}
+      <li>No employees found.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

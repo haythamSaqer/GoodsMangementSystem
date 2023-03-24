@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Product</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+  <nav class="navbar px-4">
+    <button class="openbtn show-btn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button>
+    <!-- <h5 class="mb-0 fw-bolder">
+      <span>General Authority for</span>
+      <hr class="m-0">
+      <span>Saudi Food and Drug Administration</span>
+    </h5> -->
+    <div class="h-100 d-flex align-items-center">
+      <div class="logo h-100">
+        <img src="../images/logo.jpg" alt="logo">
+      </div>
+      <h5 class="fw-bolder ms-2 mb-0">
+        Saudi food &
+        <br />
+        drog authority
+      </h5>
+    </div>
+    <h6 class="mb-0 fw-bolder d-flex align-items-center">
+      <p class="m-0 d-none d-sm-block">Aziz-DHL</p>
+      <i class="fa-regular fa-circle-user ms-2" title="Aziz-DHL"></i>
+    </h6>
+  </nav>
+  <main class="p-3 p-md-5 client-page mb-4">
+    <section class="container content-page">
+
+      <div class="box-shadow border-R p-3 p-lg-5">
+        <div class="d-flex justify-content-center flex-wrap pb-3 pb-md-5">
+          <div class="input-box mx-2">
+            <label class="text-capitalize font-14 fw-bold mb-0 mb-sm-2" for="order_id">Order ID</label>
+            <input type="text" id="order_id" class="form-control font-14" placeholder="5614">
+          </div>
+          <div class="input-box mx-2">
+            <label class="text-capitalize font-14 fw-bold mb-0 mb-sm-2" for="custom_id">customs declaration ID</label>
+            <input type="text" id="custom_id" class="form-control font-14" placeholder="5614">
+          </div>
+          <div class="input-box mx-2">
+            <label class="text-capitalize font-14 fw-bold mb-0 mb-sm-2" for="importer">importer's name</label>
+            <input type="text" id="importer" class="form-control font-14" placeholder="5614">
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="card-image d-flex my-3 py-xl-5 flex-wrap">
+
+          <div class="w-card border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+            <p class="font-14 fw-bold gray-text text-center">The general picture of the parcel</p>
+            <a href="./showImage.html">
+              <i class="fa-solid fa-images"></i>
+            </a>
+            <i class="fa-solid fa-paperclip position-absolute"></i>
+          </div>
+
+          <div class="w-card border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+            <p class="font-14 fw-bold gray-text text-center">General picture of products</p>
+            <a href="./showImage1.html">
+              <i class="fa-solid fa-images"></i>
+            </a>
+            <i class="fa-solid fa-paperclip position-absolute"></i>
+          </div>
+
+          <div class="w-card border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+            <p class="font-14 fw-bold gray-text text-center">Product identification card picture</p>
+            <a href="./showImage.html">
+              <i class="fa-solid fa-images"></i>
+            </a>
+            <i class="fa-solid fa-paperclip position-absolute"></i>
+          </div>
+
+          <div class="w-card border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+            <p class="font-14 fw-bold gray-text text-center">Read the thermal indicator</p>
+            <a href="./showImage.html">
+              <i class="fa-solid fa-images"></i>
+            </a>
+            <i class="fa-solid fa-paperclip position-absolute"></i>
+          </div>
+
+          <div class="w-card border-R position-relative pt-4 pb-3 pb-md-4 px-2 w-close">
+            <p class="font-14 fw-bold gray-text text-center">other</p>
+            <a href="./showImage.html">
+              <i class="fa-solid fa-images"></i>
+            </a>
+          </div>
+        </div>
+        <form action="" class="box-shadow border-R p-3 p-md-4 fw-bold">
+          <div>
+            <div class="d-flex justify-content-start">
+              <p class="sent-msg">Hello</p>
+            </div>
+            <div class="d-flex justify-content-end">
+              <p class="received-msg">Hello, Hi</p>
+            </div>
+            <div class="d-flex justify-content-end">
+              <p class="received-msg">How are you ?</p>
+            </div>
+            <div class="d-flex justify-content-start">
+              <p class="sent-msg">Fine, thanks.</p>
+            </div>
+          </div>
+          <textarea name="" rows="4" class="form-control" placeholder="your message"></textarea>
+          <button class="btn btn-back text-capitalize mt-4 d-block m-auto">send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- bootstrap -->
+  <script src="../libs/jQuery.js"></script>
+  <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+
+  <!-- custom -->
+  <script src="../js/script_show_el.js"></script>
+</body>
+
+</html>

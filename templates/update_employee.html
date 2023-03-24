@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <main class="m-300 py-3 py-md-5 new-request">
+        <section class="col-12 col-md-10 col-xl-6 m-auto content-page ">
+            <div class="box-shadow border-R">
+                <h5 class="font-14 text-capitalize fw-bold mb-0 px-3 py-4 border-b-1">Update</h5>
+                <form method="post" action="{% url 'goods_management:employee-update' form.instance.pk %}"
+                      class="px-4 px-md-5 py-3 py-md-4">
+                    {% csrf_token %}
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="c-name">client name</label>
+                        <input type="text" class="font-14 form-control" id="c-name" placeholder="mona" name="name"
+                               value="{{form.instance.name}}">
+                    </div>
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="user-name">user name</label>
+                        <input type="text" class="font-14 form-control" id="user-name" placeholder="mona"
+                               name="username" value="{{ form.instance.username }}">
+                    </div>
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="email">email</label>
+                        <input type="email" class="font-14 form-control" id="email" placeholder="mona@g.c " name="email"
+                               value="{{ form.instance.email }}">
+                    </div>
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2 d-block" for="mobile">mobile</label>
+                        <input type="tel" class="font-14 form-control" id="mobile" placeholder="04562123" name="phone"
+                               value="{{ form.instance.phone }}">
+                    </div>
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="pass">password</label>
+                        <input type="password" class="font-14 form-control" id="pass" placeholder="password"
+                               name="password1">
+                    </div>
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="c-pass">confirm password</label>
+                        <input type="password" class="font-14 form-control" id="c-pass" placeholder="password"
+                               name="password2">
+                    </div>
+                    <div id="confirm-message" class="box-input mb-3">
+                        <div class="d-felx flex-wrap">
+                            <span id="match" class="invalid font-12 fw-bold">Passwords don't match !</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-back mt-4 m-auto d-block">Update</button>
+                </form>
+            </div>
+        </section>
+    </main>
+{% endblock %}

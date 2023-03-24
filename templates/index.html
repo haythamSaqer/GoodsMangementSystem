@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <main class="m-300 py-3 py-md-5">
+        <section class="container px-0 px-lg-5 content-page">
+            <table>
+                <thead>
+                <tr>
+                    <th>#ID</th>
+                    <th>customs declaration ID</th>
+                    <th>importer's name</th>
+                    <th>carrier company</th>
+                    <th>Open the request</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for order in object_list %}
+
+
+
+                    <tr>
+                        <td>{{ order.id }}</td>
+                        <td>{{ order.customs_declaration_number }}</td>
+                        <td>{{ order.importer_name }}</td>
+                        <td>{{ order.shipping_company.name }}</td>
+                        <td>
+                            <button class="btn btn-edit px-5 m-auto d-block font-14"><a href="{% url 'goods_management:order_update' order.id %}">Edit</a></button>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </main>
+{% endblock %}

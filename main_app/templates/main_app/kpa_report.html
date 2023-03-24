@@ -1,0 +1,38 @@
+{% extends 'base1.html' %}
+
+{% block content %}
+    <h1>KPA Table</h1>
+
+    <form action="{% url 'goods_management:kpa_report' %}" method="GET">
+        <label for="start_date">Start date:</label>
+        <input type="date" name="start_date" id="start_date" value="{{ start_date }}">
+        <label for="end_date">End date:</label>
+        <input type="date" name="end_date" id="end_date" value="{{ end_date }}">
+        <input type="submit" value="Filter">
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Company Name</th>
+            <th>Number of Orders</th>
+            <th>KPA</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ object_list }}
+        {% for company in object_list %}
+            <tr>
+                <td>{{ company.name }}</td>
+                <td>{{ company.num_orders }}</td>
+                <td>{{ company.kpa }}%</td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="5">No companies found.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Product</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+  <nav class="navbar px-4">
+    <button class="openbtn show-btn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button>
+    <!-- <h5 class="mb-0 fw-bolder">
+      <span>General Authority for</span>
+      <hr class="m-0">
+      <span>Saudi Food and Drug Administration</span>
+    </h5> -->
+    <div class="h-100 d-flex align-items-center">
+      <div class="logo h-100">
+        <img src="../images/logo.jpg" alt="logo">
+      </div>
+      <h5 class="fw-bolder ms-2 mb-0">
+        Saudi food &
+        <br />
+        drog authority
+      </h5>
+    </div>
+    <h6 class="mb-0 fw-bolder d-flex align-items-center">
+      <p class="m-0 d-none d-sm-block">Aziz-DHL</p>
+      <i class="fa-regular fa-circle-user ms-2" title="Aziz-DHL"></i>
+    </h6>
+  </nav>
+  <main class="p-3 p-md-5 client-page mb-4 upload-image">
+    <section class="container content-page box-shadow border-R">
+      <div class="cards-images d-flex flex-wrap p-3 p-lg-5">
+        <div class="card-image m-2" data-bs-toggle="modal" data-bs-target="#imagesShow">
+          <img src="../images/img14.PNG" alt="not found">
+        </div>
+        <div class="card-image m-2" data-bs-toggle="modal" data-bs-target="#imagesShow">
+          <img src="../images/img13.PNG" alt="not found">
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="imagesShow" tabindex="-1" aria-labelledby="imagesShowLabel" aria-hidden="true">
+    <div class="modal-dialog my-0">
+      <div class="modal-content">
+        <button type="button" class="btn d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i></button>
+        <div class="modal-body">
+          <div class="box-card-img">
+            <img src="../images/img14.PNG" alt="not found">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bootstrap -->
+  <script src="../libs/jQuery.js"></script>
+  <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+
+</body>
+
+</html>

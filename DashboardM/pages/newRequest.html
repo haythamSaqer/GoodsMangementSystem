@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Product</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/select.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+  <aside id="mySidebar" class="sidebar w-300">
+    <a href="javascript:void(0)" class="closebtn fa-solid fa-angles-left" onclick="closeNav()"></a>
+    <p class="px-3 fw-bolder gray-text">King Khalid International Airport port inspection system</p>
+    <ul class="p-0">
+      <li>
+        <a href="./pages/addImage.html" class="active"><i class="fa-solid fa-circle-plus me-2"></i>new request</a>
+      </li>
+      <li>
+        <a href="./pages/clientPage.html"><i class="fa-solid fa-chart-line me-2"></i>dashboard</a>
+      </li>
+      <li>
+        <a href="./pages/clientPage1.html"><i class="fa-solid fa-gauge me-2"></i>Performance indicators</a>
+      </li>
+      <li>
+        <a href="./pages/productsImg.html"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+      </li>
+    </ul>
+  </aside>
+  <nav class="navbar px-4">
+    <button class="openbtn show-btn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></button>
+    <div class="h-100 d-flex align-items-center">
+      <div class="logo h-100">
+        <img src="../images/logo.jpg" alt="logo">
+      </div>
+      <h5 class="fw-bolder ms-2 mb-0">
+        Saudi food &
+        <br />
+        drog authority
+      </h5>
+    </div>
+    <h6 class="mb-0 fw-bolder d-flex align-items-center">
+      <p class="m-0 d-none d-sm-block">Abdulaziz S.Al-Anazi</p>
+      <i class="fa-regular fa-circle-user ms-2" title="Abdulaziz S.Al-Anazi"></i>
+    </h6>
+  </nav>
+  <main class="m-300 py-3 py-md-5 new-request">
+    <section class="col-12 col-md-10 col-xl-6 m-auto content-page ">
+      <p class="alert alert-success border-R text-capitalize text-center fw-bold alert-success-send">
+        The request has been sent successfully
+        <i class="fa-solid fa-check ms-2"></i></p>
+      <div class="box-shadow border-R">
+        <h5 class="font-14 text-capitalize fw-bold mb-0 px-3 py-4 border-b-1">Create a new request</h5>
+        <form action="" class="px-4 px-md-5 py-3 py-md-4">
+          <div class="box-input mb-3">
+            <label class="fw-bold font-14 mb-2" for="id-custom">customs declaration ID</label>
+            <input type="text" class="font-14 form-control" id="id-custom" placeholder="41562">
+          </div>
+          <div class="box-input mb-3">
+            <label class="fw-bold font-14 mb-2" for="importer">importer's name</label>
+            <input type="text" class="font-14 form-control" id="importer" placeholder="royal clinics">
+          </div>
+          <div class="box-input mb-3">
+            <label class="fw-bold font-14 mb-2" for="company">carrier company</label>
+            <div class="form-control c-pointer px-0">
+              <select class="search-select font-14">
+                <option value="DHL"> DHL</option>
+                <option value="DHL1"> DHL1</option>
+                <option value="DHL2"> DHL2</option>
+                <option value="DHL3"> DHL3</option>
+              </select>
+            </div>
+          </div>
+          <div class="box-input">
+            <label class="fw-bold font-14 mb-2" for="textarea">Notes</label>
+            <textarea class="form-control font-14" placeholder="Leave a Note here" id="textarea" style="height: 100px"></textarea>
+          </div>
+          <button class="btn btn-back mt-4 m-auto d-block btn-send">Send a Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- bootstrap -->
+  <script src="../libs/jQuery.js"></script>
+  <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+  
+
+  <!-- custom -->
+  <script src="../js/select.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

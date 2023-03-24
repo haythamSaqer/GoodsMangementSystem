@@ -1,0 +1,61 @@
+<aside id="mySidebar" class="sidebar w-300">
+    <a href="javascript:void(0)" class="closebtn fa-solid fa-angles-left" onclick="closeNav()"></a>
+    <p class="px-3 fw-bolder gray-text">King Khalid International Airport port inspection system</p>
+    <ul class="p-0">
+        <li>
+            <a href="{% url 'goods_management:order_create' %}"><i class="fa-solid fa-circle-plus me-2"></i>new request</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-circle-plus me-2"></i>new request</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-chart-line me-2"></i>dashboard</a>
+        </li>
+        <li>
+        <li class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <p class="accordion-header" id="headingOne">
+                    <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <i class="fa-solid fa-users me-2"></i>account
+                    </button>
+                </p>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                        <ul class="p-0">
+                            <li>
+                                <a href="{% url 'goods_management:employee-list' %}"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>
+                                    employee</a>
+
+                            </li>
+                            <li>
+                                <a href="{% url 'goods_management:shippingcompany-create' %}"><i
+                                        class="fa-solid fa-magnifying-glass-plus me-2"></i>
+                                    delivery company
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-gauge me-2"></i>Performance indicators</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass-plus me-2"></i>advanced search</a>
+        </li>
+
+    </ul>
+</aside>

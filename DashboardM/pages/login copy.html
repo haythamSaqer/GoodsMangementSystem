@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!-- end -->
+  <style>
+    .background-gradient {
+      min-height: 100vh;
+      background-color: #00BC90;
+      background-image: radial-gradient(650px circle at 0% 0%,
+          #00d2a1 15%,
+          #00BC90 35%,
+          #008f6e 75%,
+          #00785c 80%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          #00b78c 15%,
+          #00BC90 35%,
+          #008f6e 75%,
+          #00785c 80%,
+          transparent 100%);
+      display: flex;
+      align-items: center;
+    }
+
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#00634c, #00BC90);
+      overflow: hidden;
+    }
+
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#00634c, #00BC90);
+      overflow: hidden;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+
+    .background-gradient .text {
+      color: #fff;
+    }
+
+    .background-gradient .form-check-input:checked {
+      background-color: #00BC90;
+      border-color: #00BC90;
+    }
+
+    .icons i {
+      color: var(--main-color);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="background-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start text">
+          <h1 class="my-5 display-5 fw-bold ls-tight">
+            The best offer <br />
+            for your business
+          </h1>
+          <p class="mb-4 opacity-75 fw-bold">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Temporibus, expedita iusto veniam atque, magni tempora mollitia
+            dolorum consequatur nulla, neque debitis eos reprehenderit quasi
+            ab ipsum nisi dolorem modi. Quos?
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <label class="font-14 fw-bold form-label" for="first-name">First name</label>
+                      <input type="text" id="first-name" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <label class="font-14 fw-bold form-label" for="last-name">Last name</label>
+                      <input type="text" id="last-name" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="font-14 fw-bold form-label" for="email">Email address</label>
+                  <input type="email" id="email" class="form-control" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="font-14 fw-bold form-label" for="pass">Password</label>
+                  <input type="password" id="pass" class="form-control" />
+                </div>
+
+                <div class="form-check d-flex align-items-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="accept" checked />
+                  <label class="form-check-label font-12 fw-bold gray-text" for="accept">
+                    Subscribe to our newsletter
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-edit btn-block mb-4 px-4 px-md-5">
+                  Sign up
+                </button>
+
+                <div class="text-center icons">
+                  <p class="font-14 fw-bold">or sign up with:</p>
+                  <button type="button" class="btn mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+
+                  <button type="button" class="btn mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+
+                  <button type="button" class="btn mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+
+                  <button type="button" class="btn mx-1">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

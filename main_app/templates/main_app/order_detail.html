@@ -1,0 +1,41 @@
+{% extends 'base1.html' %}
+
+{% block content %}
+  <h1>Order Details</h1>
+  <h2>Customs Declaration Number: {{ order.customs_declaration_number }}</h2>
+  <h2>Shipping Company: {{ order.shipping_company }}</h2>
+  
+  <h3>Images</h3>
+  <div class="image-grid">
+    {% for image in images %}
+      <div class="image-container">
+        <img src="{{ image.image.url }}" alt="{{ image.id }}" class="image">
+        <p>{{ image.date_uploaded|date }}</p>
+      </div>
+    {% empty %}
+      <p>No images uploaded yet.</p>
+    {% endfor %}
+  </div>
+  
+  {% if images.has_other_pages %}
+    <div class="pagination">
+      {% if images.has_previous %}
+        <a href="?page=1">First</a>
+        <a href="?page={{ images.previous_page_number }}">Previous</a>
+      {% endif %}
+
+      {% for num in images.paginator.page_range %}
+        {% if num == images.number %}
+          <span class="current-page">{{ num }}</span>
+        {% elif num > images.number|add:'-3' and num < images.number|add:'3' %}
+          <a href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if images.has_next %}
+        <a href="?page={{ images.next_page_number }}">Next</a>
+        <a href="?page={{ images.paginator.num_pages }}">Last</a>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endblock %}

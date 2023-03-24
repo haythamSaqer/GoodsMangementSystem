@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <main class="m-300 py-3 py-md-5 new-request">
+        <section class="col-12 col-md-10 col-xl-6 m-auto content-page ">
+            <p class="alert alert-success border-R text-capitalize text-center fw-bold alert-success-send">
+                The request has been sent successfully
+                <i class="fa-solid fa-check ms-2"></i></p>
+            <div class="box-shadow border-R">
+                <h5 class="font-14 text-capitalize fw-bold mb-0 px-3 py-4 border-b-1">Create a new request</h5>
+                <form action="{% url 'goods_management:order_create' %}" class="px-4 px-md-5 py-3 py-md-4" method="post"
+                      enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="id-custom">customs declaration ID</label>
+                        <input type="text" class="font-14 form-control" id="id-custom" placeholder="41562"
+                               name="customs_declaration_number">
+                    </div>
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="importer">importer's name</label>
+                        <input type="text" class="font-14 form-control" id="importer" placeholder="royal clinics"
+                               name="importer_name">
+                    </div>
+                    <div class="box-input mb-3">
+                        <label class="fw-bold font-14 mb-2" for="company">carrier company</label>
+                        <div class="form-control c-pointer px-0">
+                            <select class="search-select font-14">
+                                {% for company in shipping_company %}
+                                    <option value="{{ company }}"> {{ company.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-input">
+                        <label class="fw-bold font-14 mb-2" for="textarea">Notes</label>
+                        <textarea class="form-control font-14" placeholder="Leave a Note here" id="textarea"
+                                  style="height: 100px" name="note"></textarea>
+                    </div>
+                    <button class="btn btn-back mt-4 m-auto d-block btn-send" type="submit">Send a Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+{% endblock %}
